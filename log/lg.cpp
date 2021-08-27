@@ -2,6 +2,8 @@
 #include<cmath>
 #include <cstdlib>
 
+#define MAX(x, y, r) (x < y) ? r = y : r = x/* присваивает r максимум из x и y */
+
 int lg(int log);
 
 void test();
