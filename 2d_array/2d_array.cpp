@@ -7,14 +7,23 @@ using  namespace std;
 void swap_min(int *m[], unsigned rows, unsigned cols)
 {
   //cout << rows;
-  //int min = m[0];
-  cout << m[0][0];
-  /*for(int i = 0; i < rows; ++i){
+  //int min = m[0][0];
+  //cout << m[0][0];
+  int * row;
+  for(int i = 0; i < rows; ++i){
+    //cout << *m;
+    cout << m[i];
+    cout << (int *)m;
+    row = m[i];
+    //m++;
     for(int j = 0; j < cols; ++j){
       //cout << *m[0];
+      //cout << *((int *)m + j * rows + i);
+      cout << *((int *)m + j * rows + i);
+      cout << *row;
     }
     cout << endl;
-  }*/
+  }
   //cout << *min; 
   cout << endl;   
 }
@@ -29,7 +38,7 @@ int ** create_array2d(size_t a, size_t b){
 }
 
 void make_array2d(const int * const * m, unsigned rows, unsigned cols){
-  srand(4541);
+  srand(454112);
   for(unsigned i = 0; i < rows; ++i){
     for(unsigned j = 0; j < cols; ++j){
       *((int *)m + i * cols + j) = rand()%10;
@@ -65,7 +74,7 @@ void transonse_arr(){
   
   //int m[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
   //int ** abc = m;
-  unsigned row = 1,col = 3;
+  unsigned row = 2,col = 3;
   int ** m = create_array2d(row,col);
   make_array2d(m,row,col);
   print_array2d(m,row,col);
