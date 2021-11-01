@@ -4,7 +4,10 @@
 using namespace std;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/main
 /*int my_strstr(const char *text, const char *pattern)
 {
   int pos = 0;
@@ -48,7 +51,10 @@ using namespace std;
 
   return -1;
 }*/
+<<<<<<< HEAD
 >>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
+=======
+>>>>>>> origin/main
 
 int my_strstr(const char *text, const char *pattern)
 {
@@ -88,6 +94,7 @@ int my_strstr(const char *text, const char *pattern)
 
 void my_strcat(char *to, const char *from){
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
   while (* from != '\0'){
     //cout << to;
@@ -106,6 +113,9 @@ void my_strcat(char *to, const char *from){
 =======
     /* ... */
 >>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
+=======
+    /* ... */
+>>>>>>> origin/main
 	while (* from != '\0'){
     //cout << to;
     if (* to == '\0'){
@@ -119,10 +129,14 @@ void my_strcat(char *to, const char *from){
 	
 	} 
 <<<<<<< HEAD
+<<<<<<< HEAD
 }*/
 =======
 }
 >>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
+=======
+}
+>>>>>>> origin/main
 
 unsigned my_strlen(const char *str){
 	unsigned len = 0; 
