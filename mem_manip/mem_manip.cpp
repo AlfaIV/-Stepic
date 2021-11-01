@@ -13,7 +13,11 @@ char *resize(const char *str, unsigned size, unsigned new_size)
 
 	}	
 
+<<<<<<< HEAD
 	delete [] str; 
+=======
+	delete [size] str; 
+>>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
 
 }
 

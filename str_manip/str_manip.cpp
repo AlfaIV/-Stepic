@@ -3,6 +3,52 @@
 
 using namespace std;
 
+<<<<<<< HEAD
+=======
+/*int my_strstr(const char *text, const char *pattern)
+{
+  int pos = 0;
+  int len = 0;
+  //char * start_search = 0;
+  //*start_search = *pattern;
+  while (* text != '\0' || * pattern == '\0'){
+    //cout << * text;
+    //cout << * pattern << endl;
+    //cout << (* text == * pattern);
+    
+    if(* text == * pattern || * pattern == '\0'){
+
+      //cout << len;
+      if (* pattern == '\0'){
+        return pos;
+      }
+
+      ++len;
+      ++pattern;
+    }
+    else if (len){
+      pattern = pattern - len;
+      len = 0;
+      //cout << len << *pattern <<  endl;
+    }
+
+    ++pos;
+    ++text;
+    
+  }
+
+  if(* text == * pattern){
+    ++len;
+    ++pattern;
+    //cout << len;
+    if (* pattern == '\0'){
+      return pos;
+    }
+  }
+
+  return -1;
+}*/
+>>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
 
 int my_strstr(const char *text, const char *pattern)
 {
@@ -41,6 +87,7 @@ int my_strstr(const char *text, const char *pattern)
 }
 
 void my_strcat(char *to, const char *from){
+<<<<<<< HEAD
 	
   while (* from != '\0'){
     //cout << to;
@@ -56,6 +103,9 @@ void my_strcat(char *to, const char *from){
 }
 
 /*void my_strcat(char *to, const char *from){
+=======
+    /* ... */
+>>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
 	while (* from != '\0'){
     //cout << to;
     if (* to == '\0'){
@@ -68,7 +118,11 @@ void my_strcat(char *to, const char *from){
     
 	
 	} 
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> e7db78c2856582fb7abfab4da197778592c35c45
 
 unsigned my_strlen(const char *str){
 	unsigned len = 0; 
